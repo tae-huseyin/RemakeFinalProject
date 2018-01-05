@@ -9,7 +9,7 @@ import com.theappexperts.remakefinalproject.views.recipelist.ListFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Crashlytics.getInstance().crash(); // Force a crash
+    //Crashlytics.getInstance().crash(); // Force a crashj
 
     FragmentManager fragmentManager;
 
