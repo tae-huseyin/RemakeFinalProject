@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "166903962367",
+    "firebase_url": "https://remakefinalproje-1515152508798.firebaseio.com",
+    "project_id": "remakefinalproje-1515152508798",
+    "storage_bucket": "remakefinalproje-1515152508798.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166903962367:android:62200ea1b8598652",
+        "android_client_info": {
+          "package_name": "com.theappexperts.remakefinalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166903962367-otjdmtriqa9kauaej2ls4vau5vtq11gp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKS9b4A-JOnANVPQ7UAtjhNcMF8OdaxX8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

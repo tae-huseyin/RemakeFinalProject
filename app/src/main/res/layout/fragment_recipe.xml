@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.theappexperts.remakefinalproject.MainActivity"
+    android:clickable="true"
+    android:focusable="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:background="@color/colorGray">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbarCollapsing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tbRecipeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/ivRecipePicture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/iv_desc"
+                fresco:placeholderImage="@drawable/perfect_placeholder" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tvRecipeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/colorBlack"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fbtnWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/colorFancyRed"
+        app:layout_anchor="@id/toolbarCollapsing"
+        android:src="@drawable/globe_icon"
+        app:layout_anchorGravity="bottom|right" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fbtnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:paddingTop="30dp"
+        android:src="@drawable/map_icon"
+        app:backgroundTint="@color/colorFancyRed"
+        app:layout_anchor="@id/tvRecipeList"
+        app:layout_anchorGravity="bottom|left" />
+
+</android.support.design.widget.CoordinatorLayout>
