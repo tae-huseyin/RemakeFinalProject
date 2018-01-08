@@ -20,6 +20,9 @@ public interface RequestInterface {
     @GET(API_List.SEARCH)
     Observable<RecipeListModel> getPopular(@Query("key") String key, @Query("page") int page);
 
+    @GET(API_List.SEARCH)
+    Observable<RecipeListModel> getSearch(@Query("key") String key, @Query("q") String keyword);
+
     @GET(API_List.RECIPE)
     Observable<RecipeModel> getRecipe(@Query("key") String key, @Query("rId") String rId);
 

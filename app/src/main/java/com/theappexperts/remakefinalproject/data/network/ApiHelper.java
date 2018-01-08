@@ -13,7 +13,8 @@ public interface ApiHelper {
     Observable<RecipeListModel> getFromApi_RecipeList(String key);
 
     Observable<RecipeListModel> getFromApi_RecipeList(String key, int page);
-
+    //search
+    Observable<RecipeListModel> getFromApi_RecipeList(String key, String keyword);
     //get the clicked recipe
     Observable<RecipeModel> getFromApi_Recipe(String key, String rId);
 }

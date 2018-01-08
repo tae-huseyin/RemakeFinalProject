@@ -30,6 +30,11 @@ public class AppApiHelper implements ApiHelper{
     }
 
     @Override
+    public Observable<RecipeListModel> getFromApi_RecipeList(String key, String keyword) {
+        return requestInterface.getSearch(key, keyword);
+    }
+
+    @Override
     public Observable<RecipeModel> getFromApi_Recipe(String key, String rId) {
         return requestInterface.getRecipe(key ,rId);
     }

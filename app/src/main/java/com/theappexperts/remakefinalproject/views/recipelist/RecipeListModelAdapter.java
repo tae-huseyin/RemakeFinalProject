@@ -14,6 +14,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.theappexperts.remakefinalproject.MainActivity;
 import com.theappexperts.remakefinalproject.R;
 import com.theappexperts.remakefinalproject.data.network.model.Recipe;
+import com.theappexperts.remakefinalproject.views.search.SearchFragment;
 
 import org.greenrobot.eventbus.EventBus;
 

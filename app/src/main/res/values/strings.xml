@@ -12,4 +12,7 @@
 
     <string name="google_maps_key">AIzaSyBCQvUkTb-Wg1jN8YHRSiJhoZFmtkXrDeg</string>
 
+    <string name="hint_search">Search by Ingredient</string>
+    <string name="btn_search">Search</string>
+
 </resources>

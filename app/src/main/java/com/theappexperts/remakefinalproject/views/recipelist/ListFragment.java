@@ -19,7 +19,9 @@ import com.theappexperts.remakefinalproject.data.network.constant.API_List;
 import com.theappexperts.remakefinalproject.data.network.model.Recipe;
 import com.theappexperts.remakefinalproject.data.network.model.RecipeListModel;
 import com.theappexperts.remakefinalproject.data.network.model.RecipeModel;
+import com.theappexperts.remakefinalproject.views.map.MapFragment;
 import com.theappexperts.remakefinalproject.views.recipe.RecipeFragment;
+import com.theappexperts.remakefinalproject.views.search.SearchFragment;
 import com.theappexperts.remakefinalproject.views.ui.utils.rx.AppSchedulerProvider;
 
 import org.greenrobot.eventbus.EventBus;
@@ -46,6 +48,18 @@ public class ListFragment extends Fragment implements IRecipeListMvpView{
 
     @BindView(R.id.rvListOfRecipes)
     RecyclerView recyclerView;
+
+    @OnClick(R.id.fbtnSearch)
+    public void goToSearch(){
+        FragmentManager fragmentManager;
+        fragmentManager = getActivity().getSupportFragmentManager();
+
+        fragmentManager.beginTransaction()
+                .add(R.id.frag_container, new SearchFragment())
+                .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                .addToBackStack(null)
+                .commit();
+    }
 
     public ListFragment() {
         // Required empty public constructor

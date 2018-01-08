@@ -30,6 +30,11 @@ public class AppDataManager implements IDataManager {
     }
 
     @Override
+    public Observable<RecipeListModel> getFromApi_RecipeList(String key, String keyword) {
+        return apiHelper.getFromApi_RecipeList(key, keyword);
+    }
+
+    @Override
     public Observable<RecipeModel> getFromApi_Recipe(String key, String rId) {
         return apiHelper.getFromApi_Recipe(key, rId);
     }
