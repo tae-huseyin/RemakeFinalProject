@@ -81,7 +81,7 @@ public class SearchFragment extends Fragment implements ISearchMvpView{
     public void onGetRecipeEvent(GetRecipeEvent event) {
         //recipeListPresenter.onCallRecipeList(Constants.API_KEY, event.rId);
         //showSnackbar(event.rId);
-        //recipeListPresenter.onDetach();
+        ///recipeListPresenter.onDetach();
         Bundle bundle = new Bundle();
         bundle.putString("recipe_ID", event.rId);
 
